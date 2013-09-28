@@ -1,17 +1,17 @@
 Summary:	Color profile manager for the GNOME desktop
 Name:		gnome-color-manager
-Version:	3.8.3
+Version:	3.10.0
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://download.gnome.org/sources/gnome-color-manager/3.8/%{name}-%{version}.tar.xz
-# Source0-md5:	c4b12b0de452236813c12f722b0b7c16
+Source0:	http://download.gnome.org/sources/gnome-color-manager/3.10/%{name}-%{version}.tar.xz
+# Source0-md5:	dac161c8116c5dc5e0099630423ffa45
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	clutter-gtk-devel
 BuildRequires:	colord-gtk-devel
 BuildRequires:	exiv2-devel
-BuildRequires:	gnome-desktop-devel
+BuildRequires:	gnome-desktop-devel >= 3.10.0
 BuildRequires:	intltool
 BuildRequires:	lcms2-devel
 BuildRequires:	libcanberra-gtk3-devel
