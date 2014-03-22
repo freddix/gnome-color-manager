@@ -1,7 +1,7 @@
 Summary:	Color profile manager for the GNOME desktop
 Name:		gnome-color-manager
 Version:	3.10.1
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://download.gnome.org/sources/gnome-color-manager/3.10/%{name}-%{version}.tar.xz
@@ -44,15 +44,12 @@ sed -i -e 's/GNOME_COMPILE_WARNINGS.*//g'	\
     -i -e 's/GNOME_DEBUG_CHECK//g' configure.ac
 
 %build
-%if 0
 %{__libtoolize}
-%{__gnome_doc_prepare}
 %{__intltoolize}
 %{__aclocal}
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%endif
 %configure \
 	--disable-silent-rules
 %{__make}
